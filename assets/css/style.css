@@ -10,3 +10,19 @@ body {
     font-family:"Playfair Display", "Open Sans", sans-serif;
     background-color: lightgray;
 }
+
+.quote {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    color: #410d39;
+    margin: 0 2% 2%;
+    padding: 2% 1% 1%;
+    border: 2px inset #C7b506;
+}
+
+.fa-lightbulb-on {
+    color:#410d39;
+    font-size: 50pax;;
+
+}
