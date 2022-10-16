@@ -33,6 +33,5 @@ function addList () {
     let myDiv = document.createElement ('div');
     myDiv.innerHTML = listItems;
     document.getElementsByTagName('ul')[0].appendChild(myDiv);
-
 }
 
