@@ -23,17 +23,25 @@
             <p><em>Let's Start To Plan A Great Day:</em></p>
         </div>
         <div id="type">
-            <input type="text" id="text">
-            <button type="submit" id="submit">
-                <i class="fas fa-thumbs-up"></i>
+            <input type="text" id="text" placeholder="Type your task in here">
+            <button id="add">
+                <i class="fas fa-plus"></i>
             </button>
         </div>
         <div id="tasks">
             <ul class="test">
-                <li>Gym in the morning</li><span><i class="fas fa-trash-alt"></i></span>
-            </ul>
-            <ul class="test">
-                <li>Meeting Mom for lunch</li><span><i class="fas fa-trash-alt"></i></span>
+                <div class="list">
+                    <li>Gym in the morning</li>
+                    <button id="check"><i class="fas fa-check"></i></button>
+                    <button id="edit"><i class="fas fa-edit"></i></button>
+                    <button id="trash"><i class="fas fa-trash-alt"></i></button>
+                </div>
+                <div class="list">
+                    <li>Have fun in the night</li>
+                    <button id="check"><i class="fas fa-check"></i></button>
+                    <button id="edit"><i class="fas fa-edit"></i></button>
+                    <button id="trash"><i class="fas fa-trash-alt"></i></button>
+                </div>
             </ul>
         </div>
      </div>
