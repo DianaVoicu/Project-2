@@ -9,13 +9,12 @@ document.addEventListener("DOMContentLoaded", function() {
         button.addEventListener ('click', function () {
             if(this.id === 'add') {
                 addList ()
-            } else if (this.id === 'trash') {
-                alert('You clicked trash')
-            } else if (this.id === 'edit') {
+            } else if (this.className === 'check') {
+                alert('You clicked checked')
+            } else if (this.className === 'edit') {
                 alert('You clicked the edit')
-            } else {
-                alert ('You clicked done')
-                
+            } else if (this.className === 'trash') {
+                removeTask ()   
             }
         });
     }
@@ -23,15 +22,23 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function addList () {
     let newTask = document.getElementById('text').value;
+    let test = document.querySelector('.check').outerHTML; 
     let listItems =  `
     <div class="list">
         <li>${newTask}</li>
-        <button id="check"><i class="fas fa-check"></i></button>
-        <button id="edit"><i class="fas fa-edit"></i></button>
-        <button id="trash"><i class="fas fa-trash-alt"></i></button>
+        ${test}
+        <button class="edit"><i class="fas fa-edit"></i></button>
+        <button class="trash"><i class="fas fa-trash-alt"></i></button>
     </div>`;
     let myDiv = document.createElement ('div');
     myDiv.innerHTML = listItems;
-    document.getElementsByTagName('ul')[0].appendChild(myDiv);
+    document.getElementsByTagName('ul')[0].appendChild(myDiv);   
+    console.log(testb )
 }
 
+
+function removeTask () {
+    let oldTask = document.getElementsByTagName('ul')[0];
+    let child = document.getElementsByClassName('list')[0];
+        oldTask.removeChild(child);   
+}
