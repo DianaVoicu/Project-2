@@ -11,7 +11,7 @@ body {
 
     font-family:"Playfair Display", "Open Sans", sans-serif;
     background-image: url('../images/modern.png');
-    background-size: contain;
+    background-size: cover;
     background-color: lightgray;
     font-size: 18px;
 }
@@ -141,6 +141,7 @@ textarea:focus, input:focus{
     display: flexbox;
     width: 100%;
     margin-bottom: 2%; 
+    min-height: 120px;
 }
 
 
@@ -184,7 +185,7 @@ textarea:focus, input:focus{
 }
 
 .fa-check {
-    
+
     color: #efff00;
     margin: 0 8px 8px 0;
     font-size: 18px;
