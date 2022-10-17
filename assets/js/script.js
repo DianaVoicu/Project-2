@@ -15,11 +15,11 @@ function addList () {
                 <div class="list">
                     <li>${newTask}</li>
                     <button class="check"><i class="fas fa-check"></i></button>
-                    <button class="edit"><i class="fas fa-edit"></i></button>
                     <button class="trash"><i class="fas fa-trash-alt"></i></button>
                 </div>
         `;
-        document.querySelector('#text').value = ''
+
+        document.querySelector('#text').value = '';
 
         let currentTask = document.querySelectorAll ('.trash');
             for (let i=0; i < currentTask.length; i++) {
@@ -34,10 +34,11 @@ function addList () {
                 this.parentNode.style.textDecoration = 'line-through'
             }
         }
-        
-        
-
- 
     }
-    
 }
+
+document.querySelector('#text').addEventListener('keydown', function (event) {
+    if (event.key === 'Enter') {
+        addList ();
+    }
+})
