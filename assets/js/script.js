@@ -2,43 +2,39 @@ let myDate = document.getElementById('date');
 let today = (new Date()).toLocaleDateString('en-GB');
 myDate.innerHTML = today;
 
-document.addEventListener("DOMContentLoaded", function() {
-    let buttons = document.getElementsByTagName ('button');
 
-    for (let button of buttons) {
-        button.addEventListener ('click', function () {
-            if(this.id === 'add') {
-                addList ()
-            } else if (this.className === 'check') {
-                alert('You clicked checked')
-            } else if (this.className === 'edit') {
-                alert('You clicked the edit')
-            } else if (this.className === 'trash') {
-                removeTask ()   
-            }
-        });
-    }
-});
-
+let addButton = document.querySelector ('#add');   
+addButton.addEventListener ('click', addList);
+         
 function addList () {
     let newTask = document.getElementById('text').value;
-    let test = document.querySelector('.check').outerHTML; 
-    let listItems =  `
-    <div class="list">
-        <li>${newTask}</li>
-        ${test}
-        <button class="edit"><i class="fas fa-edit"></i></button>
-        <button class="trash"><i class="fas fa-trash-alt"></i></button>
-    </div>`;
-    let myDiv = document.createElement ('div');
-    myDiv.innerHTML = listItems;
-    document.getElementsByTagName('ul')[0].appendChild(myDiv);   
-    console.log(testb )
-}
+    if (newTask === "") {
+        alert ('Ohh! You need to type a task for today!')
+    } else {
+        document.querySelector('.test').innerHTML += `
+                <div class="list">
+                    <li>${newTask}</li>
+                    <button class="check"><i class="fas fa-check"></i></button>
+                    <button class="edit"><i class="fas fa-edit"></i></button>
+                    <button class="trash"><i class="fas fa-trash-alt"></i></button>
+                </div>
+        `;
 
+        let currentTask = document.querySelectorAll ('.trash');
+            for (let i=0; i < currentTask.length; i++) {
+            currentTask[i].onclick = function () {
+                this.parentNode.remove ();
+                }
+            }
 
-function removeTask () {
-    let oldTask = document.getElementsByTagName('ul')[0];
-    let child = document.getElementsByClassName('list')[0];
-        oldTask.removeChild(child);   
+        let check = document.querySelectorAll ('.check');
+        for (let i=0; i < check.length; i++) {
+            check[i].onclick = function () {
+                this.parentNode.style.textDecoration = 'line-through'
+            }
+        }
+        
+
+ 
+    }
 }
