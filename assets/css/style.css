@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Playfair+Display&display=swap');
 
 * {
+
     margin: 0;
     padding: 0;
     border: 0;
 }
 
 body {
+
     font-family:"Playfair Display", "Open Sans", sans-serif;
-    background-image: url('../images/Colours.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url('../images/modern.png');
+    background-size: contain;
     background-color: lightgray;
     font-size: 18px;
 }
@@ -18,33 +19,38 @@ body {
 /* The header with a quote */
 
 .quote {
+
     display: flex;
     align-items: baseline;
     justify-content: center;
-    color: #ffe609;
+    color: #a0f9ff;
     padding: 2% 1% 1%;
-    background-color: hsl(337deg 59% 3% / 29%);
+    background-color: hsl(337deg 86% 9% / 55%);
 }
 
 .quote span {
+
     font-size: 15px;
 }
+
 
 /* The parent div for to do app */
 
 .todo {
+
     display: flex;
     flex-direction: column;
-    border: 3px inset #cebc19;
+    border: 3px inset #efff00;
     align-items: center;
     margin: 5% 20% 2%;
-    border-radius: 15px;
-    background-color: #f2efe9;
+    border-radius: 10px;
+    background-color: #c6c1b7;
 }
 
 /* My Day and Date */
 
 #title {
+
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 3%;
@@ -53,23 +59,25 @@ body {
     font-size: 1.25em;
     align-items: center;
     justify-content: center;
-    background-color: #cebc19;
-    color:#0d15a1;
+    background-color: #167175;
+    color:#ffd600fc;
     border-radius: inherit;
 }
 
 #title p {
+
     margin-right: 3%;
 }
 
 .day {
-    color:  #0d15a1;
-    font-size: 1em;
+
+    color: #7f1313;
 }
 
 /* Input text and submit button */
 
 #type {
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -78,12 +86,13 @@ body {
     width: 100%;
     height: 40px;
     align-items: center;
-    background-color:#bfb011;
-    color:  #0d15a1; 
+    background-color:#167175;
+    color:  #7f1313;
     border-radius: 5px;
 }
 
 #text {
+
     width: 70%;
     height: 85%;
     font-size: 1em;
@@ -92,90 +101,93 @@ body {
     background-color: #f2efe9;
     cursor: pointer;
     border-radius: 5px;
-    color:  #0d15a1;
+    color:  #7f1313;
 }
 
 textarea:focus, input:focus{
+
     outline: none;
 }
 
 #text:hover {
-    background-color: #c7ca71;
+
+    background-color: #ffd600fc;
 }
 
 ::placeholder{
-    font-size: 14px;
+
+    font-size: 16px;
     font-style: italic;
 }
+
 #add {
+
     margin-right: 8%;  
     border-radius: 50%; 
-    background-color: #bfb011;
+    background-color: #167175;
 }
 
 .fa-plus {
     
     font-size: 40px;
-    color: #0d15a1;
+    color: #efff00;
     cursor: pointer;
 }
 
 /* The List with Tasks */
 
 #tasks {
+
     display: flexbox;
-    min-height: 300px;
     width: 100%;
     margin-bottom: 2%; 
 }
 
 
 .test{
+
     margin: 20px 30px 20px 30px;
     padding: 1% 0 1% 0;
 }
 
 .list {
+
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    background-color: #646d6d33;
-    color: #0d15a1;
+    background-color: #7f1313;
+    color: #efff00;
     padding: 25px;
     margin-bottom: 1%;
-    font-size: 16px;;
+    font-size: 18px;
 }
 
 .list li {
+
     margin: 0 8px 15px 0;
     list-style-type: circle;
 }
 
 .list button {
+
     background: none;
     border: none;
 }
 
 .fa-trash-alt {
-    color:  #524d0c; 
+
+    color:  #efff00; 
     margin: 0 8px 8px 0; 
-    font-size: 16px;
+    font-size: 18px;
     cursor: pointer;  
 }
 
-.fa-edit {
-    color: #524d0c;
-    margin: 0 8px 8px 0;
-    font-size: 16px;
-    cursor: pointer;
-
-}
-
 .fa-check {
-    color: #524d0c;
+    
+    color: #efff00;
     margin: 0 8px 8px 0;
-    font-size: 16px;
+    font-size: 18px;
     cursor: pointer;
 }
 
