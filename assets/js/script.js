@@ -19,6 +19,7 @@ function addList () {
                     <button class="trash"><i class="fas fa-trash-alt"></i></button>
                 </div>
         `;
+        document.querySelector('#text').value = ''
 
         let currentTask = document.querySelectorAll ('.trash');
             for (let i=0; i < currentTask.length; i++) {
@@ -34,7 +35,9 @@ function addList () {
             }
         }
         
+        
 
  
     }
+    
 }
