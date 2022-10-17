@@ -12,6 +12,7 @@
     <title>To-Do List</title>
 </head>
 <body>
+    <span role="img" aria-label="Colourfull papers as a background image"></span>
      <div class="quote">
         <h3><q>You can always change your plans, but only if you have one...</q></h3><span><em>Randy Pausch</em></span>
      </div>
@@ -23,9 +24,9 @@
             <p>Let's Start To Plan A Great Day:</p>
         </div>
         <div id="type">
-            <input type="text" id="text" placeholder="Type your task in here" autofocus>
+            <input type="text" id="text" placeholder="Type your task in here" aria-labelledby="txtboxLabel" autofocus>
             <button id="add">
-                <i class="fas fa-plus"></i>
+                <i class="fas fa-plus" aria-label="Button to be pressed for adding tasks in the list below"></i>
             </button>
         </div>
         <div id="tasks">

@@ -14,8 +14,8 @@ function addList () {
         document.querySelector('.test').innerHTML += `
                 <div class="list">
                     <li>${newTask}</li>
-                    <button class="check"><i class="fas fa-check"></i></button>
-                    <button class="trash"><i class="fas fa-trash-alt"></i></button>
+                    <button class="check"><i class="fas fa-check" aria-label="Button to check off the list item with a line-through over text"></i></button>
+                    <button class="trash"><i class="fas fa-trash-alt" aria-label="Button to delete the list item"></i></button>
                 </div>
         `;
 
