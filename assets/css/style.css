@@ -12,7 +12,7 @@ body {
     font-family:"Playfair Display", "Open Sans", sans-serif;
     background-image: url('../images/modern.png');
     background-size: cover;
-    background-color: #9d978a;
+    background-color: #c6c1b7;
     font-size: 18px;
 }
 
@@ -23,9 +23,9 @@ body {
     display: flex;
     align-items: baseline;
     justify-content: center;
-    color: #a8f1f7;
+    color: #ffd600fc;
     padding: 2% 2% 2%;
-    background-color: hsl(337deg 86% 9% / 55%);
+    background-color: hsl(0deg 80% 23% / 57%);
 }
 
 .quote span {
@@ -191,7 +191,13 @@ textarea:focus, input:focus{
     cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
+/* 
+    ##Device = Low resolution Tablets, Mobile (Landscape)
+    ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
     .todo {
         margin: 20% 10% 2%;
     }
@@ -199,4 +205,29 @@ textarea:focus, input:focus{
     .list {
         background-color: #167175;
     }
+
+    body {
+        background-color: #c6c1b7;
+    }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .todo {
+        margin: 20% 10% 2%;
+    }
+
+    .list {
+        background-color: #167175;
+    }
+
+    body {
+        background-color: #c6c1b7;
+    }
+
 }
