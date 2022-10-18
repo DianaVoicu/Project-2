@@ -23,7 +23,7 @@ body {
     display: flex;
     align-items: baseline;
     justify-content: center;
-    color: #a0f9ff;
+    color: #a8f1f7;
     padding: 2% 2% 2%;
     background-color: hsl(337deg 86% 9% / 55%);
 }
@@ -40,7 +40,7 @@ body {
 
     display: flex;
     flex-direction: column;
-    border: 3px inset #efff00;
+    border: 3px inset #ffd600fc;
     align-items: center;
     margin: 10% 20% 2%;
     border-radius: 10px;
@@ -130,7 +130,7 @@ textarea:focus, input:focus{
 .fa-plus {
     
     font-size: 40px;
-    color: #efff00;
+    color: #ffd600fc;
     cursor: pointer;
 }
 
@@ -157,7 +157,7 @@ textarea:focus, input:focus{
     align-items: center;
     justify-content: space-between;
     background-color: #7f1313;
-    color: #efff00;
+    color: #ffd600fc;
     padding: 25px;
     margin-bottom: 1%;
     font-size: 18px;
@@ -177,7 +177,7 @@ textarea:focus, input:focus{
 
 .fa-trash-alt {
 
-    color:  #efff00; 
+    color:  #ffd600fc;
     margin: 0 8px 8px 0; 
     font-size: 18px;
     cursor: pointer;  
@@ -185,7 +185,7 @@ textarea:focus, input:focus{
 
 .fa-check {
 
-    color: #efff00;
+    color: #ffd600fc;
     margin: 0 8px 8px 0;
     font-size: 18px;
     cursor: pointer;
