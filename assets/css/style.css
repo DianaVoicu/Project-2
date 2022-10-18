@@ -191,7 +191,7 @@ textarea:focus, input:focus{
     cursor: pointer;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
     .todo {
         margin: 20% 10% 2%;
     }
