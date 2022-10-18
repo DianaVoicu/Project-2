@@ -12,7 +12,7 @@ body {
     font-family:"Playfair Display", "Open Sans", sans-serif;
     background-image: url('../images/modern.png');
     background-size: cover;
-    background-color: lightgray;
+    background-color: #9d978a;
     font-size: 18px;
 }
 
@@ -194,5 +194,9 @@ textarea:focus, input:focus{
 @media screen and (max-width:768px) {
     .todo {
         margin: 20% 10% 2%;
+    }
+
+    .list {
+        background-color: #167175;
     }
 }
