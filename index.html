@@ -12,28 +12,37 @@
     <title>To-Do Daily App</title>
 </head>
 <body>
+<!--Alternate text for background image-->
     <span role="img" aria-label="Colourfull papers as a background image"></span>
+
+<!--Header with the quote-->
     <div class="quote">
         <h3><q>You can always change your plans, but only if you have one...</q></h3><span><em>Randy Pausch</em></span>
     </div>
+
+<!--To do container-->
     <div class="todo">
+<!--Title with Date-->
         <div id="title">
             <p>My Day:</p><span id="date"></span> 
         </div>
         <div class="day">
             <p>Let's Start To Plan A Great Day:</p>
         </div>
+<!--Text box-->
         <div id="type">
             <input type="text" id="text" placeholder="Type your task in here" aria-label="Text box where to write your plan" autofocus>
             <button id="add" aria-label="Button to add the tasks typed in the text box">
                 <i class="fas fa-plus"></i>
             </button>
         </div>
+<!--Container for tasks-->
         <div id="tasks">
             <ul class="test"></ul>  
         </div>
     </div>
-
+    
+<!--Js script-->
     <script src="assets/js/script.js"></script>
 </body>
 </html>

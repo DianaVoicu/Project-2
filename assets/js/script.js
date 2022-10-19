@@ -51,7 +51,7 @@ function addList () {
 /* Event listener for enter key to perform the addList () */
 
     document.querySelector('#text').addEventListener('keydown', function (event) {
-    if (event.key === 'Enter') {
-        addList ();
-    }
+        if (event.key === 'Enter') {
+            addList ();
+        }
 })

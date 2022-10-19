@@ -1,108 +1,192 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# To-Do Daily List App
+## An Interactive Front-End Site Project.
 
-Welcome DianaVoicu,
+![Mokup Image](assets/images/mokup.png)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+*To-Do Daily List* is a front-end short application designed to help users organize their daily tasks. Users will be able to interact with the website by typing their plans and after manipulating the list by checking or deleting the task. 
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+The main goal was to create an interactive front-end project using JavaScript for educational purposes. HTML provides the structure of the page and CSS the styling.
 
-## Gitpod Reminders
+***
+## UX
+***
+### Website business goals
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+* The quick and simple access to the functionality of this application encourages a daily usage. This was acomplished by avoiding any extra steps in finding the app so automatically the experience of using the website would be easy and enjoyable for any user. 
+* Targeting at individual level the app would be extremely accessible for all users, regardeless of their skills. After all the main aim of a website is popularity.
+* In this case we want to achieve to become popular by the daily usage and targeting all types of users, in spite of their capability of using an application. 
 
-`python3 -m http.server`
+### User goals
 
-A blue button should appear to click: _Make Public_,
+* User can easily access daily the web application from any type of device.
+* User can easily type and list their tasks for the day.
+* User is helped to organize their day in tasks to become more efficient. 
+* User is reinforced to focus on their daily tasks and not on upcoming events. 
+* User can review their tasks, check them complete, erase them or simply add new ones to their list.
 
-Another blue button should appear to click: _Open Browser_.
+***
+## Structure of the website
+***
+* The page starts with a motivational quote meant to inspire the user.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+* The vibrant colourful background image has two purposes:
+   * To enable contrast to obtain an increased readability and legibility;
+   * To improve the user experience and create an emotionally connection with him.
 
-A blue button should appear to click: _Make Public_,
+* The central part of the page contains the application itself.
 
-Another blue button should appear to click: _Open Browser_.
+### Surface
+***
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Colours
+***
 
-To log into the Heroku toolbelt CLI:
+* Main colours:
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+  * background-color (for quote): hsl(0deg 80% 23% / 57%)
+  * background-color (for to-do app): #167175
+  * font-color: #ffd600fc
+  * font-color (text box): #7f1313
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+* Fonts:
 
-------
+  * font-family: Playfair Display, Open Sans, sans-serif
 
-## Release History
+* Image:
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+  * The background image was download from [Pexels](https://www.pexels.com/)
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+***
+## Features
+***
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+ * The main feature of the website is the to-do list application, designed to be very responsive on every device:
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+   * The title of the application 'My Day' encourages the user to add a list for the current day. The current date is generated next to the title using  Date () constructor in JavaScript.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+   * The text input box has an autofocus attribute to direct the user straight into the input field, and a hover efect styled with CSS.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+   * On the right side of our text box is a plus icon button which will generate a list with the tasks typed by the user. The functionality of the plus button to create the list was accomplished in JavaScript by:
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+     *  Having a function and two events: onclick and keydown. By doing this we give to our user the option to add his task, either by click either by pressing the enter key. 
+     
+     * The code in the function will generate:  
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+       * An alert if the user doesn't type anything in the box.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+       * Or will generate the user's task in a styled list below and remove it from the text box.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+     * Each task added has as well two buttons offering the option for the task to be either checked, crossing a line over it or to be deleted.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+***
+## Testing 
+***
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+ * I confirmed that this project is responsive, looks good and function on all standard screen sizes using the Chrome Developer Tool.
+ * I confirmed that all the navigation links are working.
+ * I confirmed that all text is readable and easy to understand.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+ ## Validator Testing 
+ ***
+ 
+ * ### HTML 
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+    * The page have no errors when passing through the official W3C Validator.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+* ### CSS 
 
-------
+    * The CSS stylesheet no errors when passing through the official (Jigsaw) Validator.
 
-## FAQ about the uptime script
+* ### Accesibility 
 
-**Why have you added this script?**
+    * I confirmed the accesibility and the others scores for this website using the lighthouse, desktop and mobile version.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+![Lighthouse score 100 for desktop](assets/images/Desktop.jpg)
 
-**How will this affect me?**
+![Lighthouse score 99 for mobile](assets/images/Mobile.jpg)
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+***
+## Bugs
+***
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+### Solved Bugs
+***
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+* When validating my HTML I received an error for using an alt atribute for the font icons.
+  * Removing the atribute fixed the issue.
 
-**So….?**
+* For JavaScript my buttons for checking and deleting the added tasks weren't working.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+  * I thought it has to be related to the fact that my buttons were created in JavaScript using template literate and they don't exist in the actual HTML file.
 
-**Can I opt out?**
+  * Reading about the dinamically JavaScript helped to realize I was placing my function for those buttons wrong.
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+### Unsolved Bugs
+***
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+* No unsolved bugs
 
-**Anything more?**
+***
+## Deployment 
+***
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+  * The site was deployed to GitHub Pages. The steps are:
 
----
+    * In the GitHub repository, navigate to Settings tab. 
+    * On the left side click Pages and after select from source section drop-down menu, Main Branch.
+    * After a refresh the page provided the link to the completed website.
 
-Happy coding!
+    The link can be accessed here [To-Do-Daily-App](https://dianavoicu.github.io/To-Do-Daily-App/)
+
+***
+## Credits
+***
+
+### Contents
+
+* The code for Fontawesome used for social media icons was taken from [Code Institute-Love Maths Essentials project](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LM101+2021_T1/courseware/2d651bf3f23e48aeb9b9218871912b2e/a8ec361b95e94c25bf8a821654bd57bc/) 
+  * The code for fonts were provided by [Google Fonts](https://fonts.google.com/)
+
+### Media 
+
+* The background image was download from [Pexels](https://www.pexels.com/)
+* The image was optimized by by [TinyPNG](https://tinypng.com/)
+
+### Credits 
+
+* To complete this project I used [Code Institute Student Template](https://github.com/Code-Institute-Org/gitpod-full-template)
+
+* For ideas and  particular debugging problems I used: 
+
+  * [Stack Community](https://stackoverflow.com/)
+  * [Geeks for Geeks](https://geeksforgeeks.org/)
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+   *  
+   
+
+
+
+
+
+
+
+
+
+

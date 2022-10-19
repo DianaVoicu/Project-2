@@ -199,14 +199,17 @@ textarea:focus, input:focus{
 @media (min-width: 481px) and (max-width: 767px) {
 
     .todo {
+
         margin: 20% 10% 2%;
     }
 
     .list {
+
         background-color: #167175;
     }
 
     body {
+
         background-color: #c6c1b7;
     }
 }
@@ -219,15 +222,12 @@ textarea:focus, input:focus{
 @media (min-width: 320px) and (max-width: 480px) {
 
     .todo {
+
         margin: 20% 10% 2%;
     }
 
     .list {
+
         background-color: #167175;
     }
-
-    body {
-        background-color: #c6c1b7;
-    }
-
 }
