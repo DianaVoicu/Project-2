@@ -3,7 +3,7 @@
 
 ![Mokup Image](assets/images/mokup.png)
 
-*To-Do Daily List* is a front-end short application designed to help users organize their daily tasks. Users will be able to interact with the website by typing their plans and after manipulating the list by checking or deleting the task. 
+*To-Do Daily List* is a front-end short application designed to help users organize their daily tasks. The easy access to create a task makes this frontend app very user-friendly great for creating a daily to do list, list that can be manipulated again by the user. 
 
 The main goal was to create an interactive front-end project using JavaScript for educational purposes. HTML provides the structure of the page and CSS the styling.
 
@@ -110,7 +110,7 @@ The main goal was to create an interactive front-end project using JavaScript fo
 ***
 
 ### Solved Bugs
-***
+
 
 * When validating my HTML I received an error for using an alt atribute for the font icons.
   * Removing the atribute fixed the issue.
@@ -122,7 +122,6 @@ The main goal was to create an interactive front-end project using JavaScript fo
   * Reading about the dinamically JavaScript helped to realize I was placing my function for those buttons wrong.
 
 ### Unsolved Bugs
-***
 
 * No unsolved bugs
 
@@ -136,7 +135,7 @@ The main goal was to create an interactive front-end project using JavaScript fo
     * On the left side click Pages and after select from source section drop-down menu, Main Branch.
     * After a refresh the page provided the link to the completed website.
 
-    The link can be accessed here [To-Do-Daily-App](https://dianavoicu.github.io/To-Do-Daily-App/)
+    The link can be accessed here [To-Do-Daily-App](https://dianavoicu.github.io/To-Do-Daily-App/).
 
 ***
 ## Credits
@@ -144,22 +143,22 @@ The main goal was to create an interactive front-end project using JavaScript fo
 
 ### Contents
 
-* The code for Fontawesome used for social media icons was taken from [Code Institute-Love Maths Essentials project](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LM101+2021_T1/courseware/2d651bf3f23e48aeb9b9218871912b2e/a8ec361b95e94c25bf8a821654bd57bc/) 
-  * The code for fonts were provided by [Google Fonts](https://fonts.google.com/)
+* The code for Fontawesome used for social media icons was taken from [Code Institute-Love Maths Essentials project](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LM101+2021_T1/courseware/2d651bf3f23e48aeb9b9218871912b2e/a8ec361b95e94c25bf8a821654bd57bc/). 
+  * The code for fonts were provided by [Google Fonts](https://fonts.google.com/).
 
 ### Media 
 
-* The background image was download from [Pexels](https://www.pexels.com/)
-* The image was optimized by by [TinyPNG](https://tinypng.com/)
+* The background image was download from [Pexels](https://www.pexels.com/).
+* The image was optimized by by [TinyPNG](https://tinypng.com/).
 
 ### Credits 
 
-* To complete this project I used [Code Institute Student Template](https://github.com/Code-Institute-Org/gitpod-full-template)
+* To complete this project I used [Code Institute Student Template](https://github.com/Code-Institute-Org/gitpod-full-template).
 
 * For ideas and  particular debugging problems I used: 
 
-  * [Stack Community](https://stackoverflow.com/)
-  * [Geeks for Geeks](https://geeksforgeeks.org/)
+  * [Stack Community](https://stackoverflow.com/).
+  * [Geeks for Geeks](https://geeksforgeeks.org/).
        
 
 
